@@ -6,13 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="174dp"
+        android:layout_height="354dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/antenna_logo"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="84dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:text="Jugar "
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:foregroundTint="#000000"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.0875513" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPSIoT- Lab 1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TeleAhorcado"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
